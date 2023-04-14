@@ -278,6 +278,22 @@ padding-bottom: 0;
   overflow: hidden;
 }
 
+.thumb{
+display: block;
+height: 112px;
+background-color: var(--our-team-background);
+padding: 24px;
+margin-bottom: 8px;
+}
+
+.icon {
+  display: block;
+  background-size: 59.72px 64px;
+  position: center;
+  margin: auto auto;
+
+}
+
 .values.title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -291,6 +307,10 @@ padding-bottom: 0;
 .values.list {
   display: flex;
   row-gap: 48px;
+}
+
+.values.item{
+  display: block;
 }
 
 .values.item {
@@ -390,6 +410,27 @@ padding-bottom: 0;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.social-box{
+  margin: auto auto;
+  position: center;
+}
+
+.social-list-item{
+display: flex;
+}
+
+.social-list-icon {
+  display: inline-block;
+  padding: auto auto;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: #2a2a2a;
+  border-radius: 50%;
+  background-image: cover;
+  background-color: var(--primary-blue-color);
 }
 
 /*Footer section*/
