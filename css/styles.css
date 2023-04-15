@@ -15,6 +15,7 @@
   --header-color: #e7e9fc;
   --body-background: #ffffff;
   --background-main: #e5e5e5;
+  --secondary-slate: #8E8F99; 
 }
 
 /* Body*/
@@ -421,11 +422,7 @@ margin-bottom: 8px;
 .socials-link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--primary-blue-color);
-  border-radius: 50%;
+  align-items: center;  
 }
 
 .socials-link:hover,
@@ -435,11 +432,45 @@ margin-bottom: 8px;
 }
 
 .socials-icon {
-  fill: currentColor;
+  fill: var(--primary-white-color);
+  background-color: var(--primary-blue-color);
+  border-color: var(--primary-white-color);
+  border-radius: 50%;
+  outline: 2px solid red;
 }
 
-/**
+/*Clients*/
 
+.customers.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+}
+.customers.list{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--secondary-slate);
+}
+
+.customers-item {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px ;
+  border: 1px solid var(--secondary-slate);
+  border-radius: 4px;
+
+}
+
+.customers-item:not(:last-child){
+    margin-right: 24px;
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  fill: var(--pressed-color);
+}
 
 /*Footer section*/
 .footer {
