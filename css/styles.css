@@ -684,11 +684,11 @@ gap: 16px;
   display: block;
 }
 
-.portfolio-item a:hover img,
-.portfolio-item a:focus img {
+.portfolio-item a img:hover,
+.portfolio-item a img:focus  {
   opacity: 0;
   background-color: var(--primary-blue-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px 
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px 
     rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
