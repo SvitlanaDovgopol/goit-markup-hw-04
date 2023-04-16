@@ -16,6 +16,7 @@
   --body-background: #ffffff;
   --background-main: #e5e5e5;
   --secondary-slate: #8E8F99; 
+  --icons-green-hover: #31D0AA; 
 }
 
 /* Body*/
@@ -420,6 +421,7 @@ margin-bottom: 8px;
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
    }
 
@@ -431,9 +433,9 @@ margin-bottom: 8px;
   height: 40px;
   background-color: var(--primary-blue-color);
   border-radius: 50%;
-  }
+ }
 
-.socials-link:hover,
+ .socials-link:hover,
 .socials-link:focus {
   background-color: var(--pressed-color);
 }
@@ -481,9 +483,18 @@ border-radius: 4px;
   line-height: 1.5;
 }
 
+.container.flex {
+  display: flex;
+}
+
 .footer.section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+
+.footer-block{
+  margin-right: 120px;
 }
 
 .footer .link {
@@ -505,8 +516,27 @@ border-radius: 4px;
   width: 264px;
 }
 
-.container.flex{
+/*socials*/
+
+.footer-socials.title{
+  color: var(--primary-white-color);
+  margin-bottom: 16px;}
+  
+.footer.socials.list{
 display: flex;
+align-items: baseline;
+gap: 16px;
+}
+ 
+.footer .socials-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .socials-link:hover,
+.footer .socials-link:focus {
+  background-color: var(--icons-green-hover);
 }
 
 /*Portfolio page*/
@@ -583,6 +613,19 @@ display: flex;
   margin-right: 24px;
 }
 
+.portfolio-item {
+  border: var(--background-cards-our-services);
+  background-color: var(--primary-white-color);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -617,13 +660,21 @@ display: flex;
   margin-bottom: 0px;
 }
 
-.portfolio-item {
-  border: var(--background-cards-our-services);
-  background-color: var(--primary-white-color);
-}
-
 .portfolio-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
+
+.portfolio-item a {
+  display: inline-block;
+}
+
+.portfolio-item a:hover img {
+  opacity: 0;
+}
+
+.portfolio-item a:hover {
+background-color:var(--primary-blue-color);
+}
+
