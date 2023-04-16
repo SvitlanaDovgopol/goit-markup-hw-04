@@ -413,32 +413,33 @@ margin-bottom: 8px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 /* Socials icons */
 .socials {
   display: flex;
   justify-content: center;
- }
+  gap: 24px;
+   }
 
 .socials-link {
   display: flex;
   justify-content: center;
-  align-items: center;  
-}
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-blue-color);
+  border-radius: 50%;
+  }
 
 .socials-link:hover,
 .socials-link:focus {
-  background-color: var(--pressed-color)
-  color: 
+  background-color: var(--pressed-color);
 }
 
-.socials-icon {
-  background-color: var(--primary-blue-color);
-  fill: var(--primary-white-color);
-  border-radius: 50%;
-  outline: 2px solid red;
-  
+.socials-icon{
+  fill:var(--primary-white-color);
 }
 
 /*Clients*/
@@ -450,34 +451,26 @@ margin-bottom: 8px;
 }
 .customers.list{
 display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: var(--secondary-slate);
+justify-content: center;
+align-items: center;
+gap: 24px;
 }
 
-.customers-link{
-  color: var(--secondary-slate);
-}
-
-.customers-item {
+.customers-link {
 display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px ;
-  border: 1px solid var(--secondary-slate);
-  border-radius: 4px;
+justify-content: center;
+align-items: center;
+padding: 16px 32px ;
+fill: var(--secondary-slate);
+border: 1px solid var(--secondary-slate);
+border-radius: 4px;
 }
 
-.customers-item:not(:last-child){
-    margin-right: 24px;
-}
-
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   fill: var(--pressed-color);
   border: 1px solid var(--pressed-color);
-  
-}
+  }
 
 /*Footer section*/
 .footer {
@@ -511,6 +504,11 @@ display: flex;
 .footer-text {
   width: 264px;
 }
+
+.container.flex{
+display: flex;
+}
+
 /*Portfolio page*/
 
 /*Filter and portfolio*/
