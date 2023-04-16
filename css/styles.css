@@ -425,6 +425,7 @@ margin-bottom: 8px;
   gap: 24px;
    }
 
+   
 .socials-link {
   display: flex;
   justify-content: center;
@@ -518,9 +519,15 @@ border-radius: 4px;
 
 /*socials*/
 
-.footer-socials.title{
-  color: var(--primary-white-color);
-  margin-bottom: 16px;}
+.footer-socials-name{
+color: var(--primary-white-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+margin-bottom: 16px;}
   
 .footer.socials.list{
 display: flex;
